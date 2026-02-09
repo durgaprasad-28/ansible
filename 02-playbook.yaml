@@ -2,5 +2,5 @@
   hosts: web
   tasks:
   - name: print my name
-    ansible.buitin.debug:
+    ansible.builtin.debug:
      msg: "my name is durga prasad"
