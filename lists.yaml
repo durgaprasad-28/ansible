@@ -1,4 +1,3 @@
-vars:
- name: "dsp"
- clg: "iibs"
- cgpa: 8.9
+name: "dsp"
+clg: "iibs"
+cgpa: 8.9
