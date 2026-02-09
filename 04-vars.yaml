@@ -1,0 +1,11 @@
+- name: to print variables
+  hosts: local
+  connection: local
+  vars:
+   name: "durga prasad"
+   study: "btech"
+   cgpa: 8.7
+  tasks:
+  - name: prinitng variables
+    ansible.builtin.debug:
+     msg: "name is {{ name }}, qualification is {{ study }}, cgpa is{{ cgpa }}" 
