@@ -1,0 +1,6 @@
+- name: to print a message
+  hosts: web
+  tasks:
+  - name: print my name
+    ansible.buitin.debug:
+     msg: "my name is durga prasad"
