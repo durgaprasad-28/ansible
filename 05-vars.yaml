@@ -1,7 +1,7 @@
 - name: to print variables
   hosts: local
   connection: local
-  vars:
+  vars_file:
    -lists.yaml
   tasks:
   - name: prinitng variables
