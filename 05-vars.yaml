@@ -1,0 +1,9 @@
+- name: to print variables
+  hosts: local
+  connection: local
+  vars:
+   -lists.yaml
+  tasks:
+  - name: prinitng variables
+    ansible.builtin.debug:
+     msg: "name is {{ name }}, college name is {{ clg }}, cgpa is{{ cgpa }}" 
