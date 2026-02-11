@@ -3,8 +3,6 @@
   connection: local
   vars:
    NAME: durga from play
-  vars_files:
-  - lists.yaml
   vars_prompt:
   - name: NAME
     prompt: enter your name and which level
