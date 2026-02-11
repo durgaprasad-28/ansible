@@ -1,0 +1,25 @@
+- name: datatypes
+  hosts: local
+  connection: local
+  vars:
+   Name: durga prasad
+   year: 4
+   graduation: true
+   details:
+    clg: svce
+    location: tirupathi
+    state: andhra
+   subjects:
+   - ap
+   - chemistry
+   - soa
+   - cc
+  tasks:
+  - name: datatypes
+    ansible.builtin.debug:
+     msg: |
+      your name is {{ name }}
+      year is {{ year }}
+      graduation is {{ graduation }}
+      give the details {{ details }}
+      your subjects are {{ subjects s}}
