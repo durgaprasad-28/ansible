@@ -11,6 +11,7 @@
     private: false
   tasks:
   - name: prinitng the domination variable
-    NAME: durga from task level
+    vars:
+     NAME: durga from task level
     ansible.builtin.debug:
      msg: "domination in {{ NAME }}"
