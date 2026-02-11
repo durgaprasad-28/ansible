@@ -1,0 +1,16 @@
+- name: domination of vars from different psitions
+  hosts: local
+  connection: local
+  vars:
+   NAME: durga from play
+  vars_files:
+  - lists.yaml
+  vars_prompt:
+  - name: NAME
+    prompt: enter your name and which level
+    priavte: false
+  tasks:
+  - name: prinitng the domination variable
+    NAME: durga from task level
+    ansible.builtin.debug:
+     msg: "domination in {{ NAME }}"
