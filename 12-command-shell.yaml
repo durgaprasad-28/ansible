@@ -5,5 +5,6 @@
   - name: checking
     ansible.builtin.shell: cat /etc/passwd | grep root
     register: user
+  - name: print output  
     ansible.builtin.debug:
-     msg: " {{ user }}"
+     msg: "{{ user }}"
