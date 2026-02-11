@@ -1,9 +1,9 @@
 - name: shell vs command
   hosts: local
   connection: local
+  tasks:
+  - name: checking
   ansible.builtin.shell: cat /etc/passwd | grep root
   registers: user
-  tasks:
-  - name: prinitng
-    ansible.builtin.debug:
-     msg: " {{ user }}"
+  ansible.builtin.debug:
+   msg: " {{ user }}"
