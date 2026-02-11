@@ -1,7 +1,7 @@
 - name: packages install
   hosts: local
   connection: local
-  taks: 
+  tasks: 
   - name: loop install
     ansible.builtin.package:
      name: "{{ item }}"
