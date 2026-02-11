@@ -22,4 +22,4 @@
       year is {{ year }}
       graduation is {{ graduation }}
       give the details {{ details }}
-      your subjects are {{ subjects s}}
+      your subjects are {{ subjects }}
