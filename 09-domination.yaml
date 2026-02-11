@@ -1,8 +1,6 @@
 - name: domination of vars from different psitions
   hosts: local
   connection: local
-  vars:
-   NAME: durga from play
   tasks:
   - name: prinitng the domination variable
     ansible.builtin.debug:
