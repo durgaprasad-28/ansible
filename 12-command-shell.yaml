@@ -3,7 +3,7 @@
   connection: local
   tasks:
   - name: checking
-  ansible.builtin.shell: cat /etc/passwd | grep root
-  registers: user
-  ansible.builtin.debug:
-   msg: " {{ user }}"
+    ansible.builtin.shell: cat /etc/passwd | grep root
+    register: user
+    ansible.builtin.debug:
+     msg: " {{ user }}"
