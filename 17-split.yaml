@@ -8,6 +8,9 @@
      year2: beee
      year3: mefa
      year4: coa
+   details: "her name is sudheeksha"
+   myip: 23.123.123.123
+   detail: "HER NAME IS SUDHEEKSHA"
    reverse:
       [
         {
@@ -42,4 +45,13 @@
      padma: "{{ lookup('file','students.yaml') | from_yaml }}"
   - name: real converting
     ansible.builtin.debug:
-     msg: "{{ padma | to_nice_json }}"   
+     msg: "{{ padma | to_nice_json }}" 
+  - name: real converting to upper
+    ansible.builtin.debug:
+     msg: "{{ details | upper }}"   
+  - name: real converting to lower
+    ansible.builtin.debug:
+     msg: "{{ detail | lower }}"
+  - name: real checking
+    ansible.builtin.debug:
+     msg: "{{ myip | ansible.utils.ipv4 }}"           
