@@ -8,6 +8,25 @@
      year2: beee
      year3: mefa
      year4: coa
+   revrse:
+      [
+        {
+            "key": "year1",
+            "value": "chemistry"
+        },
+        {
+            "key": "year2",
+            "value": "beee"
+        },
+        {
+            "key": "year3",
+            "value": "mefa"
+        },
+        {
+            "key": "year4",
+            "value": "coa"
+        }
+    ]
   tasks:
   - name: printing the words
     ansible.builtin.debug:
@@ -15,3 +34,6 @@
   - name: convert the dictionary to items 
     ansible.builtin.debug:
      msg: "{{ subjects | dict2items }}"  
+  - name: convert the list to maps
+    ansible.builtin.debug:
+     msg: "{{ reverse | items2dict }}"   
