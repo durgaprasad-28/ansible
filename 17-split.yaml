@@ -3,7 +3,15 @@
   connection: local
   vars:
    urname: dp, durga, prasad
+   subjects:
+    year1: chemistry
+    year2: beee
+    year3: mefa
+    year4: coa
   tasks:
   - name: printing the words
     ansible.builtin.debug:
      msg: "{{ urname | split(',') }}" 
+  - name: convert the dictionary to items 
+    ansible.builtin.debug:
+     msg: "{{ subjects | dic2items }}"  
