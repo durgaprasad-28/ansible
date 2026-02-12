@@ -6,4 +6,4 @@
   tasks:
   - name: printing the words
     ansible.builtin.debug:
-     msg: " {{ urname | split(',') }} " 
+     msg: "{{ urname | split(',') }}" 
