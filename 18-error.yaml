@@ -1,0 +1,10 @@
+- name: error handling
+  hosts: local
+  connection: local
+  tasks:
+  - name: checking
+    ansible.builtin.command: id roboshop
+    register: output
+  - name: printing
+    ansible.builtin.debug:
+     msg: "{{ output }}"  
