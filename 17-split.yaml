@@ -37,3 +37,9 @@
   - name: convert the list to maps
     ansible.builtin.debug:
      msg: "{{ reverse | items2dict }}"   
+  - name: convert the yaml file into json   
+    ansible.builtin.set_fact:
+     vars.json: "{{ lookup('file','07-vars.yaml') | from_yaml }}"
+  - name: real converting
+    ansible.builtin.debug:
+     msg: "{{ vars.json | to_nice_json }}"   
