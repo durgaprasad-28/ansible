@@ -2,7 +2,7 @@
   hosts: local
   connection: local
   vars:
-   names: dp,durga,prasad
+   names: dp, durga, prasad
   tasks:
   - name: printing the words
     ansible.builtin.debug:
