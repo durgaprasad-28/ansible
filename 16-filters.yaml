@@ -1,6 +1,6 @@
 - name: fliters
-  hosts:local
-  connection:local
+  hosts: local
+  connection: local
   tasks:
   - name: fliters running
     ansible.builtin.debug:
