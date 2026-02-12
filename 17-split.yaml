@@ -2,8 +2,8 @@
   hosts: local
   connection: local
   vars:
-   names: dp, durga, prasad
+   urname: dp, durga, prasad
   tasks:
   - name: printing the words
     ansible.builtin.debug:
-     msg: "the name are- {{ names | split(',') }}" 
+     msg: "the name are- {{ urname | split(',') }}" 
