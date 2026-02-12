@@ -1,0 +1,9 @@
+- name: using split
+  hosts: local
+  connection: local
+  vars:
+   names: dp,durga,prasad
+  tasks:
+  - name: printing the words
+    ansible.builtin.debug:
+     msg: the names are- {{ names | split(',') }} 
