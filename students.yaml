@@ -1,0 +1,10 @@
+- name: students list
+- student_name: durga
+  parent: padma
+  year: 4
+- student_name: durgawweer
+  parent: padmajsaak
+  year: 42
+- student_name: durgaprasad
+  parent: krishna
+  year: 43   

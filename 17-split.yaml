@@ -39,7 +39,7 @@
      msg: "{{ reverse | items2dict }}"   
   - name: convert the yaml file into json   
     ansible.builtin.set_fact:
-     vars: "{{ lookup('file','lists.yaml') | from_yaml }}"
+     padma: "{{ lookup('file','students.yaml') | from_yaml }}"
   - name: real converting
     ansible.builtin.debug:
-     msg: "{{ vars | to_nice_json }}"   
+     msg: "{{ padma | to_nice_json }}"   
