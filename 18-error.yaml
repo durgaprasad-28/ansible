@@ -1,6 +1,7 @@
 - name: error handling
   hosts: local
   connection: local
+  become: yes
   tasks:
   - name: checking
     ansible.builtin.command: id roboshop
@@ -11,4 +12,4 @@
      msg: "{{ output }}"
   - name: creating username
     ansible.builtin.command: useradd roboshop  
-    when : output.rc != 0
+    when : "output.rc != 0"
