@@ -5,6 +5,10 @@
   - name: checking
     ansible.builtin.command: id roboshop
     register: output
+    ignore_error: true
   - name: printing
     ansible.builtin.debug:
-     msg: "{{ output }}"  
+     msg: "{{ output }}"
+  - name: creating username
+    ansible.builtin.command: useradd roboshop  
+    when : "rc != 0"   
