@@ -14,4 +14,4 @@
      msg: "{{ urname | split(',') }}" 
   - name: convert the dictionary to items 
     ansible.builtin.debug:
-     msg: "{{ subjects | dic2items }}"  
+     msg: "{{ subjects | dict2items }}"  
