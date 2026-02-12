@@ -4,10 +4,10 @@
   vars:
    urname: dp, durga, prasad
    subjects:
-    year1: chemistry
-    year2: beee
-    year3: mefa
-    year4: coa
+     year1: chemistry
+     year2: beee
+     year3: mefa
+     year4: coa
   tasks:
   - name: printing the words
     ansible.builtin.debug:
