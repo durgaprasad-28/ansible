@@ -1,0 +1,7 @@
+- name: checking idempotency
+  hosts: local
+  connection: local
+  tasks: 
+  - name: real checking
+    ansible.builtin.user:
+     name: durga
