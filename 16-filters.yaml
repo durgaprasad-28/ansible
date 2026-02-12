@@ -1,0 +1,7 @@
+- name: fliters
+  hosts:local
+  connection:local
+  tasks:
+  - name: fliters running
+    ansible.builtin.debug:
+     msg: " hello whats your name {{ peru | default('durga') }}"
