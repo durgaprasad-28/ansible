@@ -1,0 +1,6 @@
+- name: import vs include
+  hosts: all
+  connection: local
+  ansible.builtin.import_role:
+   name: common
+   tasks_from: inc_imp.yaml
