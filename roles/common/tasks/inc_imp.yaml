@@ -1,4 +1,5 @@
-ansible.become.debug:
- msg: "hi1"
- ansible.become.debug:
- msg: "hi2"
+
+  ansible.builtin.debug:
+   msg: "hi1"
+  ansible.become.debug:
+   msg: "hi2"
