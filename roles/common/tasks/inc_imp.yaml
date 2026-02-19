@@ -1,4 +1,4 @@
-
+- name: printing
   ansible.builtin.debug:
    msg: "hi1"
   ansible.become.debug:
