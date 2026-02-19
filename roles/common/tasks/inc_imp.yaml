@@ -1,5 +1,5 @@
 - name: printing
-  ansible.builtin.debug:
+  ansible.builtin.debbug:
    msg: "hi1"
 - name: prining2   
   ansible.builtin.debug:
